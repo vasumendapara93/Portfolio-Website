@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <section class="navbar navbar-expand-lg fixed-top bg-body-tertiary p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Vasu Mendapara</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04"
+                aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor04">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- home -->
+    <section>
+        <div id="home">
+            <div class="left-wrap col-lg-6 col-md-6 col-sm-12">
+                <div class="dynamic-text">
+                    <div class="static-txt">
+                        <h1>I'm a</h1>
+                    </div>
+                    <div class="dynamic-txts">
+                        <h1 class="developer">Developer</h1>
+                        <h1 class="designer">Designer</h1>
+                        <h1 class="freelancer">Freelancer</h1>
+                    </div>
+                </div>
+                <div class="desc">
+                    <p>A computer science student at Uka Tarsadia University.<br>I am sharping my skills in web
+                        development, algorithm design, and problem-solving.</p>
+                </div>
+            </div>
+            <div class="right-wrap col-lg-6 col-md-6 col-sm-12">
+                <div class="circle">
+                    <img src="assets/images/profilephoto.jpg" alt=''>
+                </div>
+                <div class="circle1">
+                </div>
+                <div class="circle2">
+                </div>
+                <div class="circle3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section>
+        <div id="about">
+            <h1 class="sub-title" style="text-align: center;">About Me</h1>
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12 about-col-1">
+                    <img src="assets/images/profilephoto.jpg" alt="">
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-12 about-col-2">
+                    <p>Hello there! I'm vasu, a passionate and motivated computer science student with a flair
+                        for turning ideas into reality through the power of code. My journey in the world of technology
+                        began with a curiosity for understanding how things work, and it has evolved into a deep love
+                        for programming and problem-solving.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>3/2023 - 7/2023</span><br>Front-end Intern</li>
+                            <li><span>7/2023 - Present</span><br>ASP.NET Core Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>11th & 12th</span><br>P. P. Savani Chaitnya Vidhya Sankul</li>
+                            <li><span>B.Tech CSE</span><br>Uka Tarsadia University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- service -->
+    <section>
+        <div id="service">
+            <h1 class="sub-title" style="text-align: center;">My Services</h1>
+            <div class="nav_tech">
+                <button class="tablink" onclick="openPage('frontend',this,'#7B8AB8','white')" id="defaultOpen">FrontEnd</button>
+                <button class="tablink" onclick="openPage('backend',this,'#7B8AB8','white')">BackEnd</button>
+                <button class="tablink" onclick="openPage('database',this,'#7B8AB8','white')">Database</button>
+                <button class="tablink " onclick="openPage('mobile',this,'#7B8AB8','white')">Mobile</button>
+                <button class="tablink" onclick="openPage('infra',this,'#7B8AB8','white')">Infra and DevOps</button>
+            </div>
+
+            <div class="container">
+                <div id="mobile" class="tabcontent">
+                    <div class="row">
+                        <div class="col-md col-sm-12"></div>
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/ios.svg" alt="iOS">
+                            <p> iOS</p>
+                        </div>
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/android.svg" alt="Android">
+                            <p> Android</p>
+                        </div>
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/flutter.svg" alt="Flutter">
+                            <p> Flutter</p>
+                        </div>
+                        <div class="col-md col-sm-12"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="frontend" class="tabcontent">
+                    <div class="row">
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/angular-js.svg" alt="Angular">
+                            <p> Angular</p>
+                        </div>
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/React-js.svg" alt="React">
+                            <p> React</p>
+                        </div>
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/typescript.svg" alt="TypeScript">
+                            <p> TypeScript</p>
+                        </div>
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/html5_html_icon.svg" alt="HTML5">
+                            <p> HTML5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="backend" class="tabcontent">
+                    <div class="row">
+                        <div class="col-md col-sm-12"></div>
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/node-js.svg" alt="Node">
+                            <p> Node</p>
+                        </div>
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/php.svg" alt="PHP">
+                            <p> PHP</p>
+                        </div>
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/dot-net.svg" alt=".Net">
+                            <p> .Net</p>
+                        </div>
+                        <div class="col-md col-sm-12"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="database" class="tabcontent">
+                    <div class="row">
+                        <div class="col-md col-sm-12"></div>
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/ms-sql.svg" alt="MSSQL">
+                            <p> MSSQL</p>
+                        </div>
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/my-sql.svg" alt="MYSQL">
+                            <p> MYSQL</p>
+                        </div>
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/firebase.svg" alt="FireBase">
+                            <p> FireBase</p>
+                        </div>
+                        <div class="col-md col-sm-12"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="infra" class="tabcontent">
+                    <div class="row">
+                        <div class="col-md col-sm-12"></div>
+                        <div class="col-md col-sm-12"></div>
+                        <div class=" col-md col-sm-12 tech_hover">
+                            <img src="assets/images/icons/aws.svg" alt="AWS">
+                            <p> AWS</p>
+                        </div>
+                        <div class="col-md col-sm-12"></div>
+                        <div class="col-md col-sm-12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section>
+        <div id="projects">
+            <div class="container">
+                <div class="row mt-4">
+                    <h1 class="sub-title" style="text-align: center;">Projects I've Worked On</h1>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-sm-6">hover</div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">hover</div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">hover</div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">hover</div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">hover</div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">hover</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section>
+        <div id="contact">
+            <div class="container">
+                <h1 class="sub-title">Let's Connect</h1>
+                <div class="row mt-4">
+                    <div class="col-4 contact-col-1">
+                        <p class="mt-5"><img src="assets/svg/email.svg" alt=""> vasumendapara93@gmail.com</p>
+                        <p class="mt-5"><img src="assets/svg/call.svg" alt=""> 9876543210</p>
+                        <div class="social-icons mt-5">
+                            <a href="https://www.linkedin.com/in/vasu-mendapara-578088241/" target="_blank"><img
+                                    src="assets/svg/linkedin.svg" alt=""></a>
+                            <a href="https://github.com/vasumendapara93" target="_blank"><img
+                                    src="assets/svg/github.svg" alt=""></a>
+                            <a href="https://stackoverflow.com/users/21058568/vasu-mendapara?tab=profile"
+                                target="_blank"><img src="assets/svg/stackoverflow.svg" alt=""></a>
+                            <a href="https://www.instagram.com/vasumendapara07?igshid=MTNiYzNiMzkwZA=="
+                                target="_blank"><img src="assets/svg/instagram.svg" alt=""></a>
+                        </div>
+                        <a href="assets/Form6_S06168O6N3011231200079.pdf.pdf"
+                            class="btn download btn-outline-secondary mt-5">Download CV</a>
+                    </div>
+                    <div class="col-7 contact-col-2">
+                        <form method="post">
+                            <fieldset>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter email" fdprocessedid="2jtlk9">
+
+                                    <label for="phone" class="form-label mt-4">Phone no.</label>
+                                    <input type="phone" class="form-control" placeholder="Enter your mobile no.">
+
+                                    <label for="exampleTextarea" class="form-label mt-4">Message</label>
+                                    <textarea class="form-control" id="exampleTextarea" rows="3"
+                                        placeholder="Enter message here..."></textarea>
+
+                                    <button type="button" class="btn btn-outline-secondary mt-4">Submit</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+        function openPage(pageName, elmnt, color,tcolor) {
+            // Hide all elements with class="tabcontent" by default */
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+          
+            // Remove the background color of all tablinks/buttons
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].style.backgroundColor = "";
+              tablinks[i].style.color = "";
+            }
+          
+            // Show the specific tab content
+            document.getElementById(pageName).style.display = "block";
+          
+            // Add the specific color to the button used to open the tab content
+            elmnt.style.backgroundColor = color;
+            elmnt.style.color = tcolor
+          }
+          
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
