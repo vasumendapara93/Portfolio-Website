@@ -259,11 +259,11 @@
 
 @media (max-width: 767.9px) {
   .left-wrap {
-    padding: 0;
+    padding: 20% 0 0;
   }
 
   .right-wrap {
-    padding-top: 30px;
+    padding-top: 50px;
     margin: 0 auto;
   }
 
@@ -280,6 +280,10 @@
   .left-wrap {
     padding: 10% 0;
   }
+  .right-wrap {
+    padding-top: 50px;
+    margin: 0 auto;
+  }
 
   .circle,
   .circle1,
@@ -290,6 +294,12 @@
   }
 }
 
+@media (min-width: 992px) and (max-width:1024px) {
+  .right-wrap{
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+}
 
 
 /* -------------------- About ------------------- */
@@ -318,6 +328,7 @@
 .sub-title {
   font-size: 30px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .tab-titles {
@@ -438,8 +449,7 @@
 
 .tabcontent {
   color: #787878;
-  display: none;
-  padding: 80px 20px;
+  padding: 80px 20px 0;
   height: 100%;
   text-align: center;
 }
