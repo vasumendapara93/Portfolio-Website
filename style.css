@@ -42,7 +42,6 @@
 
 .static-txt h1 {
   font-weight: 500;
-  /* color: #7b8ab8; */
 }
 
 .dynamic-txts {
@@ -60,14 +59,6 @@
 
 .desc p {
   margin: 0 auto;
-}
-
-.dynamic-txts .designer {
-  position: absolute;
-}
-
-.dynamic-txts .freelancer {
-  position: absolute;
 }
 
 .developer {
@@ -488,6 +479,62 @@
 #projects {
   padding: 6% 5% 0;
 }
+
+.project {
+  width: 200px;
+  height: 400px;
+  border-radius: 4px;
+  display: flex;
+  gap: 5px;
+  padding: .4em;
+}
+
+.project p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+  border: 1px solid #475785;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project p:hover {
+  flex: 3;
+}
+
+.project p span {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transition: all .5s;
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: 600;
+  color: #485785;
+  letter-spacing: .1em;
+  position: absolute;
+  z-index: 1;
+}
+
+.project p:hover span{
+  opacity: 0;
+}
+
+.project img{
+  filter: brightness(0.5);
+  opacity: 0.5;
+  height: 100%;
+  width: auto;
+}
+
+.project p:hover img{
+  opacity: 1;
+}
+
 
 /* ------------------ Contact ---------------- */
 
