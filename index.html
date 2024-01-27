@@ -121,7 +121,8 @@
         <div id="service">
             <h1 class="sub-title" style="text-align: center;">My Services</h1>
             <div class="nav_tech">
-                <button class="tablink" onclick="openPage('frontend',this,'#7B8AB8','white')" id="defaultOpen">FrontEnd</button>
+                <button class="tablink" onclick="openPage('frontend',this,'#7B8AB8','white')"
+                    id="defaultOpen">FrontEnd</button>
                 <button class="tablink" onclick="openPage('backend',this,'#7B8AB8','white')">BackEnd</button>
                 <button class="tablink" onclick="openPage('database',this,'#7B8AB8','white')">Database</button>
                 <button class="tablink " onclick="openPage('mobile',this,'#7B8AB8','white')">Mobile</button>
@@ -234,10 +235,13 @@
                 <div class="row mt-4">
                     <h1 class="sub-title" style="text-align: center;">Projects I've Worked On</h1>
                     <div class="project">
-                        <p><span>Static Website</span><img class="image" src="assets/images/project1/first.png" alt=""></p>
-                        <p><span>HOVER ME</span><img class="image" src="assets/images/project1/first.png" alt=""></p>
-                        <p><span>HOVER ME</span><img class="image" src="assets/images/project1/first.png" alt=""></p>
-                        <p><span>Hover me</span><img class="image" src="assets/images/project1/first.png" alt=""></p>
+                        <p><span>Smartzone Gadgets</span><img class="image" src="assets/images/smartzone/first.png"
+                                alt=""></p>
+                        <p><span>Limpid Systems</span><img class="image" src="assets/images/limpidsystems/ecommerce.png"
+                                alt=""></p>
+                        <p><span>Book Store</span><img class="image" src="assets/images/bookstore/homepage.png" alt="">
+                        </p>
+                        <p><span>Webclips</span><img class="image" src="assets/images/webclips/homepage.png" alt=""></p>
                     </div>
                 </div>
             </div>
@@ -306,31 +310,31 @@
         }
 
 
-        function openPage(pageName, elmnt, color,tcolor) {
+        function openPage(pageName, elmnt, color, tcolor) {
             // Hide all elements with class="tabcontent" by default */
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
+                tabcontent[i].style.display = "none";
             }
-          
+
             // Remove the background color of all tablinks/buttons
             tablinks = document.getElementsByClassName("tablink");
             for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].style.backgroundColor = "";
-              tablinks[i].style.color = "";
+                tablinks[i].style.backgroundColor = "";
+                tablinks[i].style.color = "";
             }
-          
+
             // Show the specific tab content
             document.getElementById(pageName).style.display = "block";
-          
+
             // Add the specific color to the button used to open the tab content
             elmnt.style.backgroundColor = color;
             elmnt.style.color = tcolor
-          }
-          
-          // Get the element with id="defaultOpen" and click on it
-          document.getElementById("defaultOpen").click();
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
     </script>
 </body>
 
