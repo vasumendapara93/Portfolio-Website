@@ -332,6 +332,12 @@
   margin-bottom: 20px;
 }
 
+@media (max-width:768px) {
+  .sub-title {
+    text-align: center;
+  }
+}
+
 .tab-titles {
   display: flex;
   margin: 20px 0;
@@ -478,7 +484,7 @@
   border-radius: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.9px) {
   .tech_hover {
     transition: transform 0.50s;
     margin-bottom: 20px;
@@ -546,15 +552,17 @@
   opacity: 1;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.9px) {
   .project p span {
     rotate: -90deg;
     font-size: small;
   }
-  .project p:hover span{
+
+  .project p:hover span {
     font-size: small;
   }
-  .project{
+
+  .project {
     height: 200px;
     width: 100px;
   }
@@ -563,13 +571,33 @@
 /* ------------------ Contact ---------------- */
 
 #contact {
-  padding: 6% 10% 100px;
+  padding: 10% 8% 100px;
 }
 
-.contact-col-1 img {
-  margin-right: 15px;
-}
 
 .contact-col-2 {
   margin: 0 auto;
+}
+
+.contact-col-1 .email,.mobile,.social-icons,.cv{
+  margin-top: 2rem;
+}
+
+.social-icons img{
+  margin: 0.5rem;
+}
+
+@media only screen and (max-width: 767.9px) {
+  .contact-col-1 .email,.mobile,.social-icons{
+    margin-top: 1rem;
+  }
+  .contact-col-1{
+    text-align: center;
+  }
+  .social-icons img,.cv{
+    margin: 1rem;
+  }
+  .contact-col-2{
+    text-align: center;
+  }
 }
