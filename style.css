@@ -16,6 +16,12 @@
   margin-right: 20px;
 }
 
+@media (max-width: 991.9px){
+  a.navbar-brand{
+    margin: 0 auto;
+    font-weight: 600;
+  }
+}
 
 /* ------------------ Home ----------------- */
 #home {
@@ -314,12 +320,17 @@
 }
 
 .about-col-1 {
-  padding: 50px;
   text-align: center;
 }
 
 .about-col-1 img {
   border-radius: 15px;
+  height: 80%;
+  width: 70%;
+}
+
+.email,.mobile,.social-icons,.downloadcv{
+  text-align: center;
 }
 
 .about-col-2 p {
@@ -585,6 +596,10 @@
 
 .social-icons img{
   margin: 0.5rem;
+}
+
+.downloadcv {
+  margin-top: 2%;
 }
 
 @media only screen and (max-width: 767.9px) {
