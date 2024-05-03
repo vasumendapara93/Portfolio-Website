@@ -616,3 +616,7 @@
     text-align: center;
   }
 }
+
+.submitbutton {
+  width: auto;
+}
