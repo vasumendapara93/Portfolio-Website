@@ -61,6 +61,7 @@
 
 .desc {
   text-align: center;
+  font-size: large;
 }
 
 .desc p {
@@ -313,6 +314,15 @@
 
 #about {
   padding: 7% 10% 0;
+  height: 400px;
+  margin-top: 25px;
+}
+
+@media (max-width: 767.9px){
+  #about{
+    padding: auto;
+    height: auto;
+  }
 }
 
 .row {
@@ -320,21 +330,14 @@
 }
 
 .about-col-1 {
-  text-align: center;
+  text-align: left;
+  font-size: large;
+  padding: 20px;
 }
 
-.about-col-1 img {
-  border-radius: 15px;
-  height: 80%;
-  width: 70%;
-}
 
 .email,.mobile,.social-icons,.downloadcv{
   text-align: center;
-}
-
-.about-col-2 p {
-  margin-top: 20px;
 }
 
 .sub-title {
@@ -585,13 +588,8 @@
   padding: 10% 8% 100px;
 }
 
-
-.contact-col-2 {
-  margin: 0 auto;
-}
-
 .contact-col-1 .email,.mobile,.social-icons,.cv{
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .social-icons img{
@@ -600,6 +598,10 @@
 
 .downloadcv {
   margin-top: 2%;
+}
+
+.contact-col-2 {
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 767.9px) {

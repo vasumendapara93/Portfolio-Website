@@ -74,14 +74,15 @@
         <div id="about">
             <h1 class="sub-title" style="text-align: center;">About Me</h1>
             <div class="row">
-                <div class="col-lg-5 col-md-6 col-sm-12 about-col-1">
-                    <p style="margin: 20px 0;">Hello there! I'm vasu, a passionate and motivated computer science student with a flair
+                <div class="col-lg-6 col-md-6 col-sm-12 about-col-1">
+                    <p>Hello there! I'm vasu, a passionate and motivated computer science
+                        student with a flair
                         for turning ideas into reality through the power of code. My journey in the world of technology
                         began with a curiosity for understanding how things work, and it has evolved into a deep love
                         for programming and problem-solving.
                     </p>
                 </div>
-                <div class="col-lg-7 col-md-6 col-sm-12 about-col-2">
+                <div class="col-lg-6 col-md-6 col-sm-12 about-col-2">
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -247,9 +248,9 @@
             <div class="container">
                 <h1 class="sub-title" style="text-align: center;">Let's Connect</h1>
                 <div class="row mt-4">
-                    <div class="contact-col-1">
-                        <p class="email"><img src="assets/svg/email.svg" alt=""> vasumendapara93@gmail.com</p>
-                        <p class="mobile"><img src="assets/svg/call.svg" alt=""> 9316417697</p>
+                    <div class="col-lg-5 col-lg-5 contact-col-1 m-auto">
+                        <p class="email"><img src="assets/svg/email.svg" class="m-2" alt=""><a href="mailto:vasumendapara93@gmail.com" target="_blank">vasumendapara93@gmail.com </a></p>
+                        <p class="mobile"><img src="assets/svg/call.svg" class="m-2" alt=""><a href="tel:9316417697">9316417697</a></p>
                         <div class="social-icons">
                             <a href="https://www.linkedin.com/in/vasu-mendapara-578088241/" target="_blank"><img
                                     src="assets/svg/linkedin.svg" alt=""></a>
@@ -261,25 +262,26 @@
                                 target="_blank"><img src="assets/svg/instagram.svg" alt=""></a>
                         </div>
                         <div class="downloadcv">
-                        <a href="assets/cv.pdf"
-                            class="btn download btn-outline-secondary mb-5">Download CV</a>
+                            <a href="assets/cv.pdf" class="btn download btn-outline-secondary m-5">Download CV</a>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7 contact-col-2">
-                        <form method="post">
+                        <form method="post" id="contact_form">
                             <fieldset>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" placeholder="Enter email" fdprocessedid="2jtlk9">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="from_name"
+                                        aria-describedby="emailHelp" placeholder="Enter Name">
 
-                                    <label for="phone" class="form-label mt-4">Phone no.</label>
-                                    <input type="phone" class="form-control" placeholder="Enter your mobile no.">
+                                    <label class="form-label mt-4">Email address</label>
+                                    <input type="email" class="form-control" id="email_id"
+                                        aria-describedby="emailHelp" placeholder="Enter Email">
 
                                     <label for="exampleTextarea" class="form-label mt-4">Message</label>
-                                    <textarea class="form-control" id="exampleTextarea" rows="3"
+                                    <textarea class="form-control" id="message" rows="4"
                                         placeholder="Enter message here..."></textarea>
-                                    <button type="button" class="btn btn-outline-secondary submitbutton mt-4">Submit</button>
+                                    <button type="button" onclick="SendMail()" id="button"
+                                        class="text-center btn btn-outline-secondary submitbutton mt-4">Submit</button>
                                 </div>
                             </fieldset>
                         </form>
@@ -289,47 +291,13 @@
         </div>
     </section>
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-
-        function openPage(pageName, elmnt, color, tcolor) {
-            // Hide all elements with class="tabcontent" by default */
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Remove the background color of all tablinks/buttons
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].style.backgroundColor = "";
-                tablinks[i].style.color = "";
-            }
-
-            // Show the specific tab content
-            document.getElementById(pageName).style.display = "block";
-
-            // Add the specific color to the button used to open the tab content
-            elmnt.style.backgroundColor = color;
-            elmnt.style.color = tcolor
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
+    <script type="text/javascript">
+        emailjs.init('iYATg3B483U7J0bYc')
     </script>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
