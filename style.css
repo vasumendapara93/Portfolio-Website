@@ -335,11 +335,6 @@
   padding: 20px;
 }
 
-
-.email,.mobile,.social-icons,.downloadcv{
-  text-align: center;
-}
-
 .sub-title {
   font-size: 30px;
   font-weight: 600;
@@ -588,16 +583,16 @@
   padding: 10% 8% 100px;
 }
 
-.contact-col-1 .email,.mobile,.social-icons,.cv{
-  margin-top: 3rem;
+.email,.mobile,.social-icons,.downloadcv{
+  text-align: center;
+}
+
+.downloadcv{
+  margin-top: 1rem;
 }
 
 .social-icons img{
   margin: 0.5rem;
-}
-
-.downloadcv {
-  margin-top: 2%;
 }
 
 .contact-col-2 {
@@ -605,8 +600,8 @@
 }
 
 @media only screen and (max-width: 767.9px) {
-  .contact-col-1 .email,.mobile,.social-icons{
-    margin-top: 1rem;
+  .contact-col-1 .email,.mobile,.social-icons,.downloadcv{
+    margin-top: 0;
   }
   .contact-col-1{
     text-align: center;
@@ -616,6 +611,9 @@
   }
   .contact-col-2{
     text-align: center;
+  }
+  .downloadcv{
+    margin-bottom: 2rem;
   }
 }
 
